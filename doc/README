@@ -1,0 +1,21 @@
+This folder can contain any extra documentation that is not covered in the
+project's README file.
+
+An elegant use for this folder is to help one de-clutter source code files from
+the kind of long, 'user-oriented' docstrings that would otherwise need to appear
+at the top of each file; this can be done by placing the relevant docstrings
+here as separate textfiles, and accessing their contents via their respective
+modules' `__doc__` attributes as necessary.
+
+This allows the programmer to keep the opening of their source code files clean
+from distracting user-intended docstrings, and focused on more
+'implementation-relevant' comments and documentation, without sacrificing a
+user's ability to look-up relevant user-documentation during an interactive
+python session.
+
+Recommended filenames for such docstring textfiles are packagename.__doc__ for
+the package itself and packagename.src.modulename.__doc__ for all others, such
+that the names reflect the respective modules to which they refer.
+                                                                    
+An example packagename.__doc__ is provided here; note how this is used from
+within the package's __init__.py file.
